@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jesse">
+  <meta name="description" content="Adjust your cooking recipe yield">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Recipe Adjuster</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="page__logo">
+        <h2 class="page__title title">Recipe Adjuster</h2>
+        <p class="page__subtitle">Adjust your recipe yields</p>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="intro__img">
+
+      </div>
+      <div class="overview">
+        <div class="overview__title title">
+          <h1>Edit your <br>recipes</h1>
+        </div>
+        <div class="overview__desc">
+          <p>Do you need to adjust your recipe yield but don’t want to figure
+            out all the conversions? Use Recipe adjuster to quickly figure out
+            exactly how much you need.</p>
+        </div>
+        <div class="button__container">
+          <a class="overview__button btn" href="#yield">Try it</a>
+        </div>
+      </div>
+    </section>
+    <section id="yield" class="yield__container">
+      <div class="yield__overview">
+        <h2 class="yield__title">Desired yield</h2>
+        <p class="desc__paragraph">Get started by entering your current and desired recipe yield.</p>
+      </div>
+      <div class="yield__calculations">
+        <div class="input__container">
+          <div class="current__container">
+            <label class="input__label" for="current__yield">Current recipe yield:</label>
+            <input type="number" name="current_yield" id="current__yield" step="any">
+          </div>
+          <div class="expected__container">
+            <label class="input__label" for="expected__yield">Desired recipe yield:</label>
+            <input type="number" name="expected_yield" id="expected__yield" step="any">
+          </div>
+        </div>
+        <div class="factor__container">
+          <h2>Conversion Factor</h2>
+          <p class="yield__factor output"></p>
+        </div>
+      </div>
+      <div class="recipe__container">
+        <div class="current__recipe">
+          <div class="recipe__desc">
+            <h2 class="desc__title">Add your recipe</h2>
+            <p class="desc__paragraph">Get started by entering your current and desired recipe yield.</p>
+          </div>
+          <div class="recipe__add">
+            <form class="recipe__add__form">
+              <label for="qty"></label>
+              <input type="number" id="qty" placeholder="Qty" name="qty">
+              <label for="unit"></label>
+              <input type="text" id="unit" placeholder="Unit" name="unit">
+              <label for="ingredient"></label>
+              <input class="input__ingredient" type="text" id="ingredient" placeholder="Enter your ingredient" name="ingredient">
+              <button class="add__ingredient" type="button" name="add">+</button>
+            </form>
+            <!-- <div class="current__ingredient">
+              <input type="number" id="qty" placeholder="Qty" name="qty" value="0">
+              <input type="text" id="unit" placeholder="Unit" name="unit" value="cups">
+              <input class="input__ingredient" type="text" id="ingredient" placeholder="Enter your ingredient" name="ingredient" value="flour">
+              <button class="remove__ingredient" type="button" name="add">x</button>
+            </div> -->
+          </div>
+          <!-- <div class="recipe__btn">
+            <button class="add__btn btn" name="button">Convert</button>
+          </div> -->
+        </div>
+        <div class="adjusted__recipe">
+          <div class="recipe__desc">
+            <h2 class="desc__title">Adjusted yield</h2>
+            <p class="desc__paragraph">This is your new recipe with your adjusted size</p>
+          </div>
+          <div class="recipe__outcome">
+            <!-- <div class="adjusted__ingredient">
+              <input disabled type="number" id="qty" placeholder="Qty" name="qty" value="0">
+              <input disabled type="text" id="unit" placeholder="Unit" name="unit" value="cups">
+              <input disabled class="input__ingredient" type="text" id="ingredient" placeholder="Enter your ingredient" name="ingredient" value="flour">
+            </div> -->
+          </div>
+          <!-- <div class="recipe__btn__container">
+            <button class="restart__btn btn" type="button" name="button">Start Over</button>
+          </div> -->
+          <div class="recipe__img__container">
+            <div class="recipe__img">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2022 Jesse Flores
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

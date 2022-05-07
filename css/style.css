@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Nunito:ital,wght@0,800;1,600&display=swap');
+
+
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0 1.5rem;
+}
+
+.title {
+  font-family: 'Nunito', sans-serif;
+}
+
+.page__logo {
+  position: absolute;
+  top: 2.5rem;
+  left: 1.5rem;
+}
+
+.page__title, .page__subtitle {
+  margin: 0;
+}
+
+/* Introduction */
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.intro__img {
+  height: 42%;
+  width: 100%;
+  margin-top: 4.5rem;
+  background-image: url('../img/cookingchef.png');
+  background-size: cover;
+}
+
+.overview {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.overview__title {
+  margin: 2rem 0 0;
+}
+
+.overview__title h1 {
+  margin: 0;
+}
+
+.overview__title br {
+  display: none;
+}
+
+.overview__desc {
+  margin-bottom: 3rem;
+}
+
+.overview__desc p {
+  margin: 0.5rem 0;
+}
+
+.button__container {
+  padding: 0.5rem 0;
+}
+
+.overview__button {
+  text-decoration: none;
+}
+
+.btn {
+  color: white;
+  border-radius: 0.5rem;
+  background-color: #FFB342;
+  padding: 0.5rem 2rem;
+}
+
+/* Ingredient Yield */
+.yield__container {
+  margin: 2rem 0;
+}
+
+.yield__overview {
+  margin: 2rem 0;
+}
+
+.yield__title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.desc__paragraph {
+  color: #979797;
+  margin: .5rem 0;
+}
+
+/* RE-EVALUATE AFTER ADDING FORMS */
+.current__container, .expected__container, .factor__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.current__container, .expected__container {
+  gap: 1rem;
+}
+
+label, input {
+  font: 1.5rem 'Manrope', sans-serif;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  border: thin solid gray;
+  border-radius: 0.5rem;
+  width: 2.5rem;
+}
+
+input:focus {
+  border-color: #F5A022;
+}
+
+.factor__container {
+  color: #F5A022;
+  height: 18rem;
+  display: flex;
+  align-items: center;
+}
+
+.factor__container h2 {
+  width: 100%;
+}
+
+.factor__container h2, .factor__container p {
+  font-size: 2rem;
+}
+
+.factor__container p {
+  align-self: baseline;
+}
+
+.input, .output {
+  margin: 0 1rem;
+}
+
+.current__recipe, .adjusted__recipe {
+  margin-top: 2rem;
+}
+
+.recipe__desc {
+  margin: 0 0 3rem;
+}
+
+.desc__title {
+  margin: 0;
+}
+
+.recipe__add input, .recipe__outcome input {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.input__ingredient {
+  width: 50%;
+}
+
+.recipe__add .add__ingredient {
+  background-color: #00B78B;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: #00B78B;
+}
+
+.recipe__add .add__ingredient, .remove__ingredient {
+  color: white;
+}
+
+.recipe__add__form button, .current__ingredient button {
+  margin-left: 1rem;
+}
+
+.current__ingredient input, .adjusted__ingredient input {
+  background-color: #E3E3E3;
+  border-color: transparent;
+  margin-right: 3px;
+}
+
+.remove__ingredient {
+  background-color: #FF5942;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #FF5942;
+}
+
+.recipe__btn {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.add__btn {
+  border-color: transparent;
+  background-color: rgb(255 179 66 / 80%);
+}
+
+.recipe__btn__container {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0 2rem;
+}
+
+.restart__btn {
+  background-color: #FF5942;
+  border-color: transparent
+}
+
+.recipe__img__container {
+  display: flex;
+  align-content: center;
+  height: 50%;
+}
+
+.recipe__img {
+  height: 13rem;
+  width: 100%;
+  background-image: url('../img/food.png');
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0 4rem;
+  }
+
+  .page__logo {
+    left: 4rem;
+  }
+
+  .page__title {
+    font-size: 2rem;
+  }
+
+  .page__subtitle {
+    display: none;
+  }
+
+  .intro {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .intro__img {
+    margin: 0;
+    order: 2;
+  }
+
+  .intro__img, .overview {
+    height: 32rem;
+    width: 50%;
+  }
+
+  .overview__title h1 {
+    font-size: 4.5rem;
+  }
+
+  .overview__title br {
+    display: block;
+  }
+
+  .yield__container {
+    min-height: 85vh;
+  }
+
+  .yield__overview {
+    display: none;
+  }
+
+  .yield__calculations {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .input__container, .factor__container {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .current__container, .expected__container {
+    width: 100%;
+  }
+
+  .factor__container {
+    justify-content: center;
+  }
+
+  .factor__container h2 {
+    text-align: center;
+  }
+
+  .recipe__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .current__recipe, .adjusted__recipe {
+    width: 50%;
+    margin: 0;
+  }
+
+  .add__btn {
+    display: none;
+  }
+
+  .recipe__img__container {
+    display: none;
+  }
+
+  .restart__btn {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  body {
+    margin: 0 7rem;
+  }
+
+  .page__logo {
+    left: 7rem;
+  }
+
+  .page__title {
+    font-size: 3rem;
+  }
+
+  .intro__img {
+    width: 50%;
+  }
+
+  .overview {
+    width: 35%;
+  }
+
+  .recipe__add__form input, .current__ingredient input, .adjusted__ingredient input
+  {
+    height: 2rem;
+  }
+
+  /* RE-EVALUATE AFTER ADDING FORM */
+  .current__container h2, .current__container p,
+  .expected__container h2, .expected__container p,
+  .factor__container h2, .factor__container p {
+    font-size: 2rem;
+  }
+}

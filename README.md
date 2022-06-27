@@ -1,4 +1,4 @@
 # recipe-adjuster
-Change your recipe yield and see your new adjusted recipe.
+Web app that helps cooks adjust a recipes yield and recipes ingredient.
 
 ## Live site at https://jessef10.github.io/recipe-adjuster/
